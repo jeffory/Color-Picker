@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Color picker: Choose color",
+        "command": "show_color_picker"
+    }
+]
