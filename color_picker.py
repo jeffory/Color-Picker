@@ -23,7 +23,7 @@ class ShowColorPickerCommand(sublime_plugin.TextCommand):
                 if is_valid_hex_color(selected):
                     start_color = "#"+selected
 
-		color_picker_dir = sublime.packages_path() + '\\ST2-Color-Picker'
+		color_picker_dir = sublime.packages_path() + '\\Color-Picker'
 
 		startupinfo = subprocess.STARTUPINFO()
 		startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
