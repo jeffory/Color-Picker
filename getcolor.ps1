@@ -1,7 +1,9 @@
+param( $start_color )
 [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") | Out-Null
 
 $ColorDialog = New-Object System.Windows.Forms.ColorDialog
 
+$ColorDialog.Color = $start_color;
 $ColorDialog.FullOpen = 1;
 $ret = $ColorDialog.ShowDialog()
 
